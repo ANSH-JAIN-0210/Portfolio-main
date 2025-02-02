@@ -2,7 +2,10 @@ import React from "react";
 import ProjectBox from "./ProjectBox";
 import yt from "../images/yt.png";
 import signature from "../images/signature.png";
-import quiz from "../images/quiz.png";
+import auth from "../images/auth.png";
+import todo from "../images/todo.png";
+import food from "../images/food.jpg";
+import note from "../images/note.jpg";
 
 const Projects = () => {
   return (
@@ -11,8 +14,12 @@ const Projects = () => {
         My <b>Projects</b>
       </h1>
       <div className="project">
-        <ProjectBox projectPhoto={quiz} projectName="Quiz App" />
+        
         <ProjectBox projectPhoto={yt} projectName="Youtube 2.0" />
+        <ProjectBox projectPhoto={food} projectName="Food Ordering App" />
+        <ProjectBox projectPhoto={auth} projectName="Authentication" />
+        <ProjectBox projectPhoto={todo} projectName="To-Do App" />
+        <ProjectBox projectPhoto={note} projectName="Notes App" />
         <ProjectBox projectPhoto={signature} projectName="Signature App" />
       </div>
 
