@@ -19,49 +19,56 @@ const ProjectBox = ({ projectPhoto, projectName }) => {
     Authentication: {
       desc: "Secure your app with a solid authentication system! Smooth sign-in and sign-up, built for reliability.",
       github: "https://github.com/ANSH-JAIN-0210/Authentication",
-      website: "",
+      website: null, // Changed to null to handle empty cases
     },
     "To-Do App": {
       desc: "Stay organized effortlessly! A powerful to-do app to keep track of tasks and boost productivity.",
       github: "https://github.com/ANSH-JAIN-0210/Todo",
-      website: "",
+      website: null,
     },
     "Notes App": {
       desc: "Capture ideas on the go! A seamless notes app designed for quick and easy note-taking anytime, anywhere.",
       github: "https://github.com/ANSH-JAIN-0210/notes-app",
-      website: "",
+      website: null,
     },
     "Signature App": {
       desc: "Sign documents digitally with ease! A smooth, interactive app for hassle-free e-signatures.",
       github: "https://github.com/ANSH-JAIN-0210/Signature-App",
-      website: "signature-9stpkb6kx-ansh-jain-0210s-projects.vercel.app",
+      website: "https://signature-9stpkb6kx-ansh-jain-0210s-projects.vercel.app",
     },
   };
 
   const project = desc[projectName];
-  const showGithub = project.github !== "" ? "block" : "none";
+
+  // Handle invalid project names
+  if (!project) {
+    return (
+      <div className="projectBox">
+        <p>Project not found.</p>
+      </div>
+    );
+  }
 
   return (
     <div className="projectBox">
-      <img className="projectPhoto" src={projectPhoto} alt="Project display" />
+      <img className="projectPhoto" src={projectPhoto} alt={projectName} />
       <div>
         <h3>{projectName}</h3>
         <p>{project.desc}</p>
-        <a
-          style={{ display: showGithub }}
-          href={project.github}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <button className="projectbtn">
-            <FaGithub /> Github
-          </button>
-        </a>
-        <a href={project.website} target="_blank" rel="noopener noreferrer">
-          <button className="projectbtn">
-            <CgFileDocument /> Demo
-          </button>
-        </a>
+        {project.github && (
+          <a href={project.github} target="_blank" rel="noopener noreferrer">
+            <button className="projectbtn">
+              <FaGithub /> Github
+            </button>
+          </a>
+        )}
+        {project.website && (
+          <a href={project.website} target="_blank" rel="noopener noreferrer">
+            <button className="projectbtn">
+              <CgFileDocument /> Demo
+            </button>
+          </a>
+        )}
       </div>
     </div>
   );
