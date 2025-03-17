@@ -1,11 +1,11 @@
 import React from "react";
 import ProjectBox from "./ProjectBox";
-import yt from "../images/yt.png";
-import signature from "../images/signature.png";
-import auth from "../images/auth.png";
-import todo from "../images/todo.png";
-import food from "../images/food.jpg";
-import note from "../images/note.jpg";
+import yt from "../images/yt.webp";
+import test from "../images/typing-test.webp";
+import cloth from "../images/e-commerce.webp";
+import todo from "../images/todo.webp";
+import food from "../images/food.webp";
+import note from "../images/note.webp";
 
 const Projects = () => {
   return (
@@ -17,10 +17,10 @@ const Projects = () => {
         
         <ProjectBox projectPhoto={yt} projectName="Youtube 2.0" />
         <ProjectBox projectPhoto={food} projectName="Food Ordering App" />
-        <ProjectBox projectPhoto={auth} projectName="Authentication" />
+        <ProjectBox projectPhoto={cloth} projectName="Clothing E-Commerce Site" />
         <ProjectBox projectPhoto={todo} projectName="To-Do App" />
         <ProjectBox projectPhoto={note} projectName="Notes App" />
-        <ProjectBox projectPhoto={signature} projectName="Signature App" />
+        <ProjectBox projectPhoto={test} projectName="Typing Test App" />
       </div>
 
       <div style={{ textAlign: "center", marginTop: "20px" }}>
