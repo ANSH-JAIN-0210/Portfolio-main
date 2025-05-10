@@ -3,9 +3,9 @@ import ProjectBox from "./ProjectBox";
 import yt from "../images/yt.webp";
 import test from "../images/typing-test.webp";
 import cloth from "../images/e-commerce.webp";
-import todo from "../images/todo.webp";
-import food from "../images/food.webp";
-import note from "../images/note.webp";
+import job from "../images/job.png";
+import gemini from "../images/gemini.png";
+import invoice from "../images/invoice.jpeg";
 
 const Projects = () => {
   return (
@@ -16,10 +16,10 @@ const Projects = () => {
       <div className="project">
         
         <ProjectBox projectPhoto={yt} projectName="Youtube 2.0" />
-        <ProjectBox projectPhoto={food} projectName="Food Ordering App" />
+        <ProjectBox projectPhoto={gemini} projectName="Gemini" />
         <ProjectBox projectPhoto={cloth} projectName="Clothing E-Commerce Site" />
-        <ProjectBox projectPhoto={todo} projectName="To-Do App" />
-        <ProjectBox projectPhoto={note} projectName="Notes App" />
+        <ProjectBox projectPhoto={job} projectName="Job Tracking App" />
+        <ProjectBox projectPhoto={invoice} projectName="Invoice" />
         <ProjectBox projectPhoto={test} projectName="Typing Test App" />
       </div>
 

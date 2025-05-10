@@ -10,26 +10,26 @@ const ProjectBox = ({ projectPhoto, projectName }) => {
       website:
         "https://youtube-2-0-fk5bbh2y6-ansh-jain-0210s-projects.vercel.app/",
     },
-    "Food Ordering App": {
-      desc: "Craving something delicious? This sleek app lets you browse, select, and order your favorite meals seamlessly.",
-      github: "https://github.com/ANSH-JAIN-0210/food-ordering-app",
+    "Gemini": {
+      desc: "A Gemini clone is a sleek replica that mirrors the dual-natured brilliance of the original.",
+      github: "https://github.com/ANSH-JAIN-0210/Gemini-Clone",
       website:
-        "https://full-stack-task-management-app-aeae-biklu6p2s.vercel.app/",
+        "https://gemini-clone-eta-nine.vercel.app/",
     },
     "Clothing E-Commerce Site": {
       desc: "A modern e-commerce platform for clothing. Browse, filter, and purchase your favorite styles with ease.",
       github: "https://github.com/ANSH-JAIN-0210/E-commerce",
       website: "https://e-commerce-one-flame-18.vercel.app/",
     },
-    "To-Do App": {
-      desc: "Stay organized effortlessly! A powerful to-do app to keep track of tasks and boost productivity.",
-      github: "https://github.com/ANSH-JAIN-0210/Todo",
-      website: "",
+    "Job Tracking App": {
+      desc: "A job tracking app that helps you stay organized, track applications, and land your dream role with ease.",
+      github: "https://github.com/ANSH-JAIN-0210/Job-Application-Tracker-main",
+      website: "https://job-application-tracker-omega.vercel.app/",
     },
-    "Notes App": {
-      desc: "Capture ideas on the go! A seamless notes app designed for quick and easy note-taking anytime, anywhere.",
-      github: "https://github.com/ANSH-JAIN-0210/notes-app",
-      website: "",
+    "Invoice": {
+      desc: "An invoice generator that turns your transactions into sleek, professional bills in just a few clicks.",
+      github: "https://github.com/ANSH-JAIN-0210/invoice-generator",
+      website: "https://invoice-generator-six-gamma.vercel.app/",
     },
     "Typing Test App": {
       desc: "Test your typing speed and accuracy with this interactive typing test app, featuring real-time feedback and scoring.",
